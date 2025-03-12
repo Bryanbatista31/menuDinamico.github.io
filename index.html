@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Dinámico con Submenús</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav id="menu"></nav>
+  </header>
+  <main>
+    <section class="gestion-menu">
+      <div class="gestion-header">
+        <h2>Gestionar Menú</h2>
+        <button id="toggleGestion">Ocultar</button>
+      </div>
+      <div id="gestionContent" class="gestion-content">
+        <form id="addForm">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="enlace" placeholder="Enlace (ej. /pagina)" required>
+          <input type="text" id="submenus" placeholder="Submenús (opcional, ej. Op1,/op1|Op2,/op2)">
+          <button type="submit">Agregar Opción</button>
+        </form>
+        <div id="menu-options"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
